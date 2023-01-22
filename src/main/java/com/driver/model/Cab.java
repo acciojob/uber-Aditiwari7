@@ -17,7 +17,7 @@ public class Cab {
         this.available = availability;
     }
 
-    @ManyToOne
+    @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn
     private Driver driver;
 
